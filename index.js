@@ -16,14 +16,14 @@ function checkWteam() {
     if (cHScore > cAScore) {
       tHColor.style.color = "green";
 
-      tAColor.style.color = "white";
+      tAColor.style.color = "red";
     } else {
       tAColor.style.color = "green";
-      tHColor.style.color = "white";
+      tHColor.style.color = "red";
     }
   } else {
-    tAColor.style.color = "red";
-    tHColor.style.color = "red";
+    tAColor.style.color = "orange";
+    tHColor.style.color = "orange";
   }
 }
 
@@ -61,4 +61,11 @@ function addA3() {
   awayScore += 3;
   document.getElementById("a-Score").textContent = awayScore;
   checkWteam();
+}
+
+function resetGame() {
+  document.getElementById("h-Score").textContent = 0;
+  document.getElementById("a-Score").textContent = 0;
+  tAColor.style.color = "red";
+  tHColor.style.color = "red";
 }

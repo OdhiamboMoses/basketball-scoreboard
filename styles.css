@@ -7,6 +7,9 @@
   font-family: mansir;
   src: url(scoreF.ttf);
 }
+body {
+  text-align: center;
+}
 #board-body {
   display: flex;
   justify-content: space-around;
@@ -60,4 +63,16 @@ button:hover {
 
 #h-Score {
   color: red;
+}
+
+#n-btn {
+  margin-top: 3%;
+  color: white;
+  background-color: royalblue;
+  border: 1px solid #9aabd8;
+}
+
+#n-btn:hover {
+  border: 1px solid royalblue;
+  background-color: #9aabd8;
 }
